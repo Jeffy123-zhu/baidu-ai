@@ -1,0 +1,78 @@
+Sample Medical Record
+=====================
+
+Patient Information
+-------------------
+Name: John Doe
+Gender: Male
+Age: 65 years
+ID: [PATIENT_ID]
+Phone: [PHONE_NUMBER]
+
+Visit Information
+-----------------
+Date: November 26, 2025
+Department: Cardiology
+Physician: Dr. Smith
+
+Chief Complaint
+---------------
+Chest discomfort and shortness of breath for 3 days, 
+worsening with activity
+
+Present Illness
+---------------
+Patient experienced chest discomfort and shortness of breath 
+3 days ago without obvious trigger. Symptoms worsen with 
+physical activity and are accompanied by mild chest pain, 
+which resolves with rest. No fever, cough, or sputum.
+History of hypertension for 10 years, taking antihypertensive 
+medication regularly.
+
+Past Medical History
+--------------------
+- Hypertension: 10 years
+- Type 2 Diabetes: 5 years
+- No surgical history
+- No known drug allergies
+
+Physical Examination
+--------------------
+Temperature: 36.5°C (97.7°F)
+Blood Pressure: 160/95 mmHg
+Heart Rate: 92 bpm
+Respiratory Rate: 18/min
+
+Cardiovascular and respiratory examination unremarkable
+
+Laboratory & Diagnostic Tests
+------------------------------
+ECG: Sinus rhythm, mild ST segment depression
+Complete Blood Count: Within normal limits
+Liver & Kidney Function: Normal
+Lipid Panel: Total cholesterol 6.2 mmol/L (elevated)
+
+Preliminary Diagnosis
+---------------------
+1. Coronary Artery Disease? Angina Pectoris
+2. Hypertension Stage 3, Very High Risk
+3. Type 2 Diabetes Mellitus
+
+Treatment Plan
+--------------
+1. Schedule coronary CT angiography
+2. Adjust antihypertensive medication
+3. Add antiplatelet therapy
+4. Control blood glucose and lipids
+5. Follow-up in 2 weeks
+
+Prescriptions
+-------------
+1. Aspirin 100mg once daily
+2. Atorvastatin 20mg at bedtime
+3. Nitroglycerin tablets as needed
+4. Low-salt, low-fat diet
+5. Avoid strenuous exercise
+
+Physician Signature: Dr. Smith
+Date: November 26, 2025

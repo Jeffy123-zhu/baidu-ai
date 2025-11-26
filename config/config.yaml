@@ -1,0 +1,94 @@
+# MediDoc AI Configuration
+
+# System settings
+system:
+  mode: "hybrid"  # edge, cloud, or hybrid
+  log_level: "INFO"
+  data_dir: "./data"
+  model_dir: "./models"
+
+# OCR settings
+ocr:
+  model: "paddleocr-vl"
+  lang: "ch"
+  use_gpu: true
+  det_model_dir: "./models/ocr/det"
+  rec_model_dir: "./models/ocr/rec"
+  confidence_threshold: 0.85
+
+# ERNIE settings
+ernie:
+  model_name: "ernie-4.5-8b"
+  api_type: "qianfan"
+  max_tokens: 2048
+  temperature: 0.3
+  top_p: 0.9
+
+# Multi-agent system
+agents:
+  enable_debate: true
+  max_debate_rounds: 3
+  consensus_threshold: 0.85
+  
+  roles:
+    - name: "document_analyzer"
+      model: "ernie-4.5-8b"
+      system_prompt: "You are an experienced medical record analyst..."
+    
+    - name: "cardiology_consultant"
+      model: "ernie-cardiology"
+      system_prompt: "You are a cardiology specialist..."
+    
+    - name: "oncology_consultant"
+      model: "ernie-oncology"
+      system_prompt: "You are an oncology specialist..."
+    
+    - name: "radiology_consultant"
+      model: "ernie-radiology"
+      system_prompt: "You are a radiology specialist..."
+    
+    - name: "medication_advisor"
+      model: "ernie-4.5-8b"
+      system_prompt: "You are a clinical pharmacist..."
+    
+    - name: "report_generator"
+      model: "ernie-4.5-8b"
+      system_prompt: "You generate comprehensive medical reports..."
+
+# Edge device settings
+edge:
+  device: "rdk-x5"
+  quantization: "int8"
+  max_batch_size: 4
+  offline_mode: true
+  cache_size: "2GB"
+  sync_interval: 300  # seconds
+
+# Cloud services
+cloud:
+  novita:
+    endpoint: "https://api.novita.ai/v1"
+    model: "ernie-4.5-72b"
+    timeout: 30
+  
+  baidu:
+    app_id: "${BAIDU_APP_ID}"
+    api_key: "${BAIDU_API_KEY}"
+    secret_key: "${BAIDU_SECRET_KEY}"
+
+# Performance thresholds
+performance:
+  complexity_threshold:
+    simple: 0.3
+    medium: 0.7
+  
+  routing:
+    edge_max_complexity: 0.3
+    hybrid_max_complexity: 0.7
+
+# Web interface
+web:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+  cors_origins: ["*"]

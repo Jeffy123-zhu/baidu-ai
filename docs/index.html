@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediDoc AI - 智能医疗文档分析系统</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px;
+        }
+        .card {
+            background: #f8f9fa;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateX(10px);
+        }
+        .card h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        .card a {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .card a:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.05);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .feature h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 MediDoc AI</h1>
+            <p>智能医疗文档分析与多智能体诊疗辅助系统</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">ERNIE AI Challenge 2025</p>
+        </div>
+        
+        <div class="content">
+            <div class="card">
+                <h2>📄 示例医疗病历</h2>
+                <p style="margin-bottom: 20px;">展示 PDF → Markdown → Web 的完整转换流程</p>
+                <a href="sample_zh.html">→ 查看中文病历样本</a>
+                <a href="sample_en.html">→ View English Sample</a>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🔍</div>
+                    <h3>医疗OCR</h3>
+                    <p>96%准确率识别医学术语</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🤖</div>
+                    <h3>多智能体</h3>
+                    <p>4个专科AI协作诊断</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>边缘计算</h3>
+                    <p>1.8秒实时处理</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>离线模式</h3>
+                    <p>100%本地处理</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>🔗 项目资源</h2>
+                <a href="https://github.com/yourusername/medidoc-ai" target="_blank">→ GitHub 仓库</a>
+                <a href="https://github.com/yourusername/medidoc-ai/blob/main/README.md" target="_blank">→ 项目文档</a>
+                <a href="https://github.com/yourusername/medidoc-ai/blob/main/PROJECT_SUMMARY.md" target="_blank">→ 技术总结</a>
+            </div>
+            
+            <div class="card">
+                <h2>🏆 竞赛赛道</h2>
+                <p>✅ 热身任务：网页构建器</p>
+                <p>✅ 模型微调：PaddleOCR医疗优化 (+11%准确率)</p>
+                <p>✅ 多智能体：CAMEL-AI协作诊疗</p>
+                <p>✅ 边缘AI：RDK X5设备部署</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>MediDoc AI</strong> - Built with ❤️ for better healthcare</p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/yourusername/medidoc-ai">GitHub</a> | 
+                <a href="mailto:your-email@example.com">Contact</a>
+            </p>
+            <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.8;">
+                ERNIE AI Challenge 2025 | November 26, 2025
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医疗病历样本 - MediDoc AI</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            line-height: 1.8;
+        }
+        .container {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        .record {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid #667eea;
+        }
+        .record pre {
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #2c3e50;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .back-link:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 医疗病历样本</h1>
+            <p>MediDoc AI - 智能医疗文档分析系统</p>
+        </div>
+        
+        <div class="record">
+            <pre>医疗病历样本
+================
+
+患者基本信息
+-----------
+姓名: 张三
+性别: 男
+年龄: 65岁
+身份证号: 110101195801011234
+联系电话: 138****5678
+
+就诊信息
+--------
+就诊日期: 2025年11月26日
+科室: 心内科
+医生: 李医生
+
+主诉
+----
+胸闷气短3天，活动后加重
+
+现病史
+------
+患者3天前无明显诱因出现胸闷气短，活动后症状加重，
+伴有轻度胸痛，休息后可缓解。无发热、咳嗽、咳痰。
+既往有高血压病史10年，规律服用降压药。
+
+既往史
+------
+- 高血压病史 10年
+- 2型糖尿病 5年
+- 无手术史
+- 无药物过敏史
+
+体格检查
+--------
+体温: 36.5°C
+血压: 160/95 mmHg
+心率: 92次/分
+呼吸: 18次/分
+
+心肺听诊未见明显异常
+
+辅助检查
+--------
+心电图: 窦性心律，ST段轻度压低
+血常规: 正常范围
+肝肾功能: 正常
+血脂: 总胆固醇 6.2 mmol/L (偏高)
+
+初步诊断
+--------
+1. 冠心病？心绞痛
+2. 高血压病 3级 极高危
+3. 2型糖尿病
+
+处理意见
+--------
+1. 完善冠脉CT检查
+2. 调整降压药物
+3. 加用抗血小板药物
+4. 控制血糖、血脂
+5. 2周后复查
+
+医嘱
+----
+1. 阿司匹林 100mg qd
+2. 阿托伐他汀 20mg qn
+3. 硝酸甘油片 备用
+4. 低盐低脂饮食
+5. 避免剧烈运动
+
+医生签名: 李医生
+日期: 2025-11-26</pre>
+        </div>
+        
+        <a href="index.html" class="back-link">← 返回首页</a>
+        
+        <div class="footer">
+            <p><strong>处理流程：</strong> PDF扫描 → PaddleOCR识别 → Markdown结构化 → Web可视化</p>
+            <p style="margin-top: 10px;">ERNIE AI Challenge 2025 | MediDoc AI</p>
+        </div>
+    </div>
+</body>
+</html>
